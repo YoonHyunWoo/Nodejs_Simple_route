@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const route = require('./route');
 app.route('/')
 .get((req,res)=>{
     res.send("Hello Nodejs");
@@ -8,7 +7,7 @@ app.route('/')
 .post((req,res)=>{
     var yoon = {
         name : "yoon",
-        tall : 156,
+        tall : 175,
         dd : 12,
     };
     res.send(yoon);
